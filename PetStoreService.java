@@ -50,7 +50,7 @@ public class PetStoreService {
 	private PetStore findPetStoreById(Long petStoreId) {
 		return petStoreDao.findById(petStoreId)
 				.orElseThrow(() -> new NoSuchElementException(
-						"Pet store with ID=" + petStoreId + "was not found."));
+						"Pet store with ID = " + petStoreId + " was not found."));
 	}
 }
 
